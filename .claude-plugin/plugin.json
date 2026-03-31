@@ -1,0 +1,8 @@
+{
+    "name": "my-prs",
+    "description": "Fetch the list of PRs where I'm registered as a reviewer from GitHub and evaluate their review priority.",
+    "version": "1.0.0",
+    "author": {
+        "name": "khs3994"
+    }
+}

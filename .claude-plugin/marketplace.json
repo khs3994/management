@@ -1,0 +1,17 @@
+{
+    "name": "my-prs-marketplace",
+    "owner": {
+        "name": "khs3994"
+    },
+    "metadata": {
+        "description": "PR review priority evaluation plugins"
+    },
+    "plugins": [
+        {
+            "name": "my-prs",
+            "source": "./",
+            "description": "Fetch the list of PRs where I'm registered as a reviewer from GitHub and evaluate their review priority.",
+            "version": "1.0.0"
+        }
+    ]
+}
