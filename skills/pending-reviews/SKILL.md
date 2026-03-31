@@ -1,11 +1,11 @@
 ---
-name: my-prs
+name: pending-reviews
 description: >
   내가 리뷰어로 등록된 PR 목록을 가져와서 리뷰 우선순위를 평가합니다.
-  "my-prs", "리뷰할 PR", "리뷰 대기", "리뷰 목록"을 언급할 때 사용합니다.
+  "pending-reviews", "리뷰할 PR", "리뷰 대기", "리뷰 목록"을 언급할 때 사용합니다.
 ---
 
-# My PRs - Review Priority Evaluator
+# Pending Reviews - Review Priority Evaluator
 
 ## 언제 이 스킬을 사용하는가
 
@@ -13,7 +13,7 @@ description: >
 
 - 내가 리뷰어로 등록된 PR 목록을 확인하고 싶을 때
 - 리뷰 우선순위를 파악하고 싶을 때
-- "my-prs", "리뷰할 PR", "리뷰 대기" 등을 언급할 때
+- "pending-reviews", "리뷰할 PR", "리뷰 대기" 등을 언급할 때
 
 ## Reference 문서
 

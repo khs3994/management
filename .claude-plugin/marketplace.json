@@ -1,17 +1,17 @@
 {
-    "name": "my-prs-marketplace",
+    "name": "management-marketplace",
     "owner": {
         "name": "khs3994"
     },
     "metadata": {
-        "description": "PR review priority evaluation plugins"
+        "description": "Management skills for GitHub workflow automation"
     },
     "plugins": [
         {
-            "name": "my-prs",
+            "name": "management",
             "source": "./",
-            "description": "Fetch the list of PRs where I'm registered as a reviewer from GitHub and evaluate their review priority.",
-            "version": "1.0.0"
+            "description": "A collection of management skills for GitHub workflow automation.",
+            "version": "1.1.0"
         }
     ]
 }
