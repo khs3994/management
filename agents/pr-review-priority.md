@@ -14,6 +14,8 @@ Score each given PR using WSJF and return the optimal review order.
 
 Score each PR on a Fibonacci scale (1, 2, 3, 5, 8, 13, 20).
 
+**다중 라벨 규칙**: 라벨이 여러 개일 때는 해당 항목(BV, RR/OE 등)에서 **가장 높은 점수 하나만** 적용한다.
+
 ### Business Value (BV)
 | 조건 | 점수 |
 |------|------|
@@ -24,12 +26,14 @@ Score each PR on a Fibonacci scale (1, 2, 3, 5, 8, 13, 20).
 | 라벨 없음 | 5 |
 
 ### Time Criticality (TC)
+경과일은 `createdAt` 날짜와 오늘 날짜의 **달력일 차이**(calendar day diff)로 계산한다. 시간은 무시한다.
+
 | 조건 | 점수 |
 |------|------|
-| 생성된 지 3일 이상 경과 | 20 |
-| 생성된 지 2일 경과 | 13 |
-| 생성된 지 1일 경과 | 8 |
-| 생성된 지 1일 미만 | 3 |
+| 경과일 >= 3일 | 20 |
+| 경과일 == 2일 | 13 |
+| 경과일 == 1일 | 8 |
+| 경과일 == 0일 (당일) | 3 |
 
 ### Risk Reduction / Opportunity Enablement (RR/OE)
 | 조건 | 점수 |

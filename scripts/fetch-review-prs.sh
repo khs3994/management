@@ -4,5 +4,5 @@
 gh search prs \
   --review-requested=@me \
   --state=open \
-  --json repository,title,number,url,createdAt,labels,author \
+  --json repository,title,number,url,createdAt,labels,author,isDraft \
   --limit 100
